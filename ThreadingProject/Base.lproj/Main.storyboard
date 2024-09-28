@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1nt-KU-30X">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThreadingProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LjF-M4-LTC">
+                                <rect key="frame" x="0.0" y="227" width="393" height="591"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="591" id="oP9-LX-HND"/>
+                                </constraints>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XTa-Yu-GEM">
+                                <rect key="frame" x="30" y="2" width="333" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="6mY-24-kYf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LjF-M4-LTC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Un-B9-MgK"/>
+                            <constraint firstItem="LjF-M4-LTC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3fp-EE-6r3"/>
+                            <constraint firstItem="XTa-Yu-GEM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="NbZ-Pi-31A"/>
+                            <constraint firstItem="LjF-M4-LTC" firstAttribute="top" secondItem="XTa-Yu-GEM" secondAttribute="bottom" constant="20" id="UnH-FK-Xzv"/>
+                            <constraint firstItem="XTa-Yu-GEM" firstAttribute="centerX" secondItem="LjF-M4-LTC" secondAttribute="centerX" id="cCC-w4-3PP"/>
+                            <constraint firstAttribute="trailing" secondItem="LjF-M4-LTC" secondAttribute="trailing" id="inB-c4-xKd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JDw-ib-cWj"/>
+                    <connections>
+                        <outlet property="imageView" destination="XTa-Yu-GEM" id="aYP-w6-OZY"/>
+                        <outlet property="tableView" destination="LjF-M4-LTC" id="DOc-QI-Tkw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uid-IO-fCt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1nt-KU-30X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wzU-a5-rLB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="waf-y4-CD2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojB-Xw-rbA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
